@@ -61,7 +61,7 @@ function InventoryItems({ name, update, closeModal, hasArmor, hasWeapon }) {
       <div className="inventoryItem_container">
         {inventoryType.length === 0 ? (
           <h3>Sorry.. You don't have any {name}
-          <a href="/shop"> <br />(SHOP)</a>
+          <a href="https://arena-game-react.netlify.app/shop"> <br />(SHOP)</a>
           </h3>
         ) : (
           inventoryType.map((e, index) => {

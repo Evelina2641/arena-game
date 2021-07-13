@@ -50,7 +50,7 @@ function Inventory({ update }) {
     ) : (
       <h2>
         You don't have any inventory... <br /> You can buy it here
-        <a href="/shop"> SHOP</a>
+        <a href="https://arena-game-react.netlify.app/shop"> SHOP</a>
       </h2>
     );
     
