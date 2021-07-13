@@ -1,0 +1,250 @@
+.header_wrapper {
+  margin-bottom: 0;
+}
+.arena_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  .player_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h4 {
+      color: var(--text-color);
+      font-size: 2em;
+    }
+    img {
+      width: 150px;
+    }
+    .health {
+      color: var(--text-color);
+      font-weight: 800;
+      width: 100%;
+      img {
+        width: 20px;
+      }
+    }
+    .health_bar {
+      height: 20px;
+      background-color: var(--secondary-color);
+    }
+    .inventory_container {
+      display: flex;
+      justify-content: space-between;
+      width: 250px;
+      div {
+        height: 70px;
+        border: 1px solid var(--accent-color);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-color);
+        font-weight: 600;
+        font-size: 1.3em;
+        img {
+          width: 70%;
+        }
+      }
+    }
+  }
+  .buttons_container {
+    display: flex;
+    flex-direction: column;
+    button {
+      border: 1px solid var(--secondary-color);
+      color: var(--secondary-color);
+      font-size: 1.4em;
+      padding: 7px 15px;
+      background-color: var(--text-color);
+      border-radius: 5px;
+      font-weight: 600;
+      margin: 15px auto;
+    }
+    button:focus {
+      border: 1px solid var(--text-color);
+      color: var(--text-color);
+      background-color: var(--secondary-color);
+    }
+    p {
+      text-align: center;
+      font-size: 1.2em;
+      color: var(--text-color);
+      margin: 5px 20px;
+      animation: shake 0.5s infinite;
+    }
+  }
+  .enemy_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .enemy_wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px;
+      h4 {
+        color: var(--text-color);
+        font-size: 2em;
+      }
+      p {
+        color: var(--text-color);
+        font-size: 1.2em;
+      }
+      img {
+        width: 150px;
+      }
+    }
+    .bar_container {
+      width: 250px;
+      p {
+        font-weight: 600;
+        color: var(--text-color);
+        img {
+          width: 20px;
+        }
+      }
+      .health_bar {
+        height: 20px;
+        background-color: var(--secondary-color);
+
+        width: 100%;
+      }
+    }
+  }
+}
+.animationForUser {
+  animation: attackEnemy 0.3s ease-in-out;
+}
+.animationForEnemy {
+  animation: attackUser 0.3s ease-in-out;
+}
+
+@keyframes attackEnemy {
+  0% {
+    transform: translate(0px, 35px);
+  }
+  50% {
+    transform: translate(0px, 10px);
+  }
+  100% {
+    transform: translate(0px, 35px);
+  }
+}
+@keyframes attackUser {
+  0% {
+    transform: translate(0px, -75px);
+  }
+  50% {
+    transform: translate(0px, -30px);
+  }
+  100% {
+    transform: translate(0px, -75px);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header_wrapper {
+    margin: 0 15px;
+  }
+  .arena_container {
+    flex-direction: row;
+    justify-content: space-around;
+    height: 80vh;
+    .player_container {
+      margin-top: 65px;
+      h4 {
+        font-size: 2.2em;
+      }
+      img {
+        width: 220px;
+      }
+      .health {
+        font-size: 1.4em;
+        img {
+          width: 25px;
+        }
+      }
+      .inventory_container {
+        width: 350px;
+        margin-top: 10px;
+        div {
+          height: 110px;
+          font-size: 1.4em;
+          img {
+            width: 80%;
+          }
+        }
+      }
+    }
+    .buttons_container {
+      width: 18%;
+      button {
+        font-size: 1.5em;
+        padding: 7px 19px;
+      }
+      p {
+        font-size: 1.3em;
+        margin: 5px 0px;
+        animation: shake 0.5s infinite;
+      }
+    }
+    .enemy_container {
+      margin-top: -70px;
+      .enemy_wrapper {
+        margin-top: 0px;
+        h4 {
+          font-size: 2.2em;
+        }
+        p {
+          font-size: 1.3em;
+          padding-bottom: 10px;
+        }
+        img {
+          width: 200px;
+        }
+      }
+      .bar_container {
+        width: 350px;
+        p {
+          font-size: 1.4em;
+          img {
+            width: 25px;
+          }
+        }
+      }
+    }
+  }
+  .animationForUser {
+    animation: attackEnemy 0.4s ease-in-out;
+  }
+  .animationForEnemy {
+    animation: attackUser 0.4s ease-in-out;
+  }
+  @keyframes attackEnemy {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    50% {
+      transform: translate(75px, 0px);
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+  @keyframes attackUser {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    50% {
+      transform: translate(-75px, 0px);
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+}

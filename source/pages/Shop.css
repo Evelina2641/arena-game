@@ -1,0 +1,145 @@
+.shop_container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.shop_container .header_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.shop_container .header_wrapper button {
+  margin: 15px;
+  border: none;
+  cursor: pointer;
+}
+.shop_container .header_wrapper button img {
+  width: 40px;
+}
+.shop_container .header_wrapper h1 {
+  color: var(--accent-color);
+  font-size: 3em;
+}
+.shop_container .header_wrapper h3 {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+.shop_container .header_wrapper h3 img {
+  width: 50px;
+  margin: 0 -10px 0 15px;
+}
+.shop_container .header_wrapper h3 span {
+  color: var(--accent-color);
+}
+.shop_container p {
+  text-align: center;
+  font-size: 1.5em;
+  color: var(--text-color);
+  margin: 15px 20px;
+  animation: shake 0.5s infinite;
+}
+.shop_container .armors, .shop_container .weapons, .shop_container .potions {
+  margin-bottom: 25px;
+}
+.shop_container .armors h2, .shop_container .weapons h2, .shop_container .potions h2 {
+  text-align: center;
+  font-size: 1.9em;
+  color: var(--text-color);
+  margin-bottom: 35px;
+}
+.shop_container .armors .wrapper, .shop_container .weapons .wrapper, .shop_container .potions .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shop_container .armors .wrapper div, .shop_container .weapons .wrapper div, .shop_container .potions .wrapper div {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.shop_container .armors .wrapper div img, .shop_container .weapons .wrapper div img, .shop_container .potions .wrapper div img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.shop_container .armors .wrapper div h4, .shop_container .weapons .wrapper div h4, .shop_container .potions .wrapper div h4 {
+  font-size: 1.2em;
+  padding-bottom: 5px;
+  color: var(--accent-color);
+}
+.shop_container .armors .wrapper div h4 span, .shop_container .weapons .wrapper div h4 span, .shop_container .potions .wrapper div h4 span {
+  color: var(--text-color);
+}
+.shop_container .armors .wrapper div button, .shop_container .weapons .wrapper div button, .shop_container .potions .wrapper div button {
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  font-size: 1.5em;
+  padding: 7px 18px;
+  background-color: var(--text-color);
+  border-radius: 5px;
+  font-weight: 600;
+}
+.shop_container .armors .wrapper div button:focus, .shop_container .weapons .wrapper div button:focus, .shop_container .potions .wrapper div button:focus {
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(10px, 0px);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translate(5px, 0px);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translate(10px, 0px);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .shop_container p {
+    font-size: 1.6em;
+  }
+  .shop_container .armors h2, .shop_container .weapons h2, .shop_container .potions h2 {
+    font-size: 2em;
+  }
+  .shop_container .armors .wrapper div, .shop_container .weapons .wrapper div, .shop_container .potions .wrapper div {
+    width: 30%;
+  }
+  .shop_container .armors .wrapper div img, .shop_container .weapons .wrapper div img, .shop_container .potions .wrapper div img {
+    width: 50%;
+    margin-top: 15px;
+  }
+  .shop_container .armors .wrapper div h4, .shop_container .weapons .wrapper div h4, .shop_container .potions .wrapper div h4 {
+    font-size: 1.4em;
+    padding-bottom: 5px;
+    color: var(--accent-color);
+    width: 200px;
+    text-align: center;
+  }
+  .shop_container .armors .wrapper div h4 span, .shop_container .weapons .wrapper div h4 span, .shop_container .potions .wrapper div h4 span {
+    color: var(--text-color);
+  }
+  .shop_container .armors .wrapper div button, .shop_container .weapons .wrapper div button, .shop_container .potions .wrapper div button {
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    font-size: 1.5em;
+    padding: 7px 18px;
+    background-color: var(--text-color);
+    border-radius: 5px;
+    font-weight: 600;
+  }
+  .shop_container .armors .wrapper div button:focus, .shop_container .weapons .wrapper div button:focus, .shop_container .potions .wrapper div button:focus {
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+  }
+}
+
+/*# sourceMappingURL=Shop.css.map */

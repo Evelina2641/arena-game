@@ -1,0 +1,42 @@
+ .header_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+ .header_wrapper button {
+    margin: 15px;
+    border: none;
+    cursor: pointer;
+  }
+ .header_wrapper button img {
+    width: 40px;
+  }
+ .header_wrapper h1 {
+    color: var(--accent-color);
+    font-size: 3em;
+  }
+ .header_wrapper h3 {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+  }
+  .header_wrapper h3 img {
+    width: 50px;
+    margin: 0 -10px 0 15px;
+  }
+ .header_wrapper h3 span {
+    color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 1280px) {
+  .header_wrapper {
+        margin-bottom: 35px;
+      }
+  .header_wrapper h3 img {
+        width: 60px;
+      }
+  .header_wrapper h3 span {
+        font-size: 1.2em;
+      }
+  }

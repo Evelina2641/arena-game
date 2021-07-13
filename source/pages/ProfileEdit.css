@@ -1,0 +1,79 @@
+.edit_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.edit_container h2 {
+  font-size: 2em;
+  color: var(--text-color);
+  margin-bottom: 7px;
+}
+.edit_container img {
+  width: 200px;
+}
+.edit_container .edit_username,
+.edit_container .edit_image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+.edit_container .edit_username label,
+.edit_container .edit_image label {
+  font-size: 1.5em;
+  color: var(--text-color);
+  margin-bottom: 7px;
+}
+.edit_container .edit_username input,
+.edit_container .edit_image input {
+  outline: none;
+  border: 2px solid var(--text-color);
+  padding: 5px 20px;
+  color: var(--text-color);
+  margin-bottom: 10px;
+  font-size: 1.4em;
+}
+.edit_container .edit_username input:focus,
+.edit_container .edit_image input:focus {
+  border: 2px solid var(--accent-color);
+}
+.edit_container .edit_username button,
+.edit_container .edit_image button {
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  font-size: 1.5em;
+  padding: 7px 15px;
+  background-color: var(--text-color);
+  border-radius: 5px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.edit_container .edit_username button:focus,
+.edit_container .edit_image button:focus {
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+}
+.edit_container p {
+  font-size: 1.5em;
+  color: var(--accent-color);
+  margin: 15px 20px;
+  animation: shake 0.7s infinite;
+  text-align: center;
+}
+
+@media screen and (min-width: 1280px) {
+  .edit_container h2 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+  }
+  .edit_container .edit_username input,
+.edit_container .edit_image input {
+    padding: 5px 35px;
+  }
+}
+
+/*# sourceMappingURL=ProfileEdit.css.map */

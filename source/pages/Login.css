@@ -1,0 +1,123 @@
+.login_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login_container h2 {
+  transform: rotate(90deg);
+  margin: 0 auto;
+  background: transparent;
+}
+.login_container h2 img {
+  width: 150px;
+  height: 150px;
+  animation: pulse 1s infinite;
+  background: transparent;
+}
+.login_container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.login_container form h3 {
+  color: var(--text-color);
+  font-size: 2.2em;
+  margin-bottom: 25px;
+}
+.login_container form label {
+  font-size: 1.5em;
+  color: var(--text-color);
+  margin-bottom: 7px;
+}
+.login_container form input {
+  outline: none;
+  border: 2px solid var(--text-color);
+  padding: 5px 10px;
+  color: var(--text-color);
+  margin-bottom: 20px;
+  font-size: 1.4em;
+}
+.login_container form input:focus {
+  border: 2px solid var(--accent-color);
+}
+.login_container form button {
+  border: none;
+  outline: none;
+}
+.login_container form button img {
+  width: 50px;
+  cursor: pointer;
+}
+.login_container form p {
+  font-size: 1.5em;
+  color: var(--text-color);
+  margin: 15px 20px;
+  animation: shake 0.5s infinite;
+}
+.login_container a {
+  font-size: 1.5em;
+  color: var(--accent-color);
+  margin-top: 10px;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes shake {
+  0% {
+    transform: translate(10px, 0px);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translate(5px, 0px);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translate(10px, 0px);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .login_container {
+    margin-top: 20px;
+  }
+  .login_container h2 img {
+    width: 180px;
+    height: 180px;
+  }
+  .login_container form {
+    margin-top: 20px;
+  }
+  .login_container form h3 {
+    font-size: 2.7em;
+    margin-bottom: 30px;
+  }
+  .login_container form label {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  .login_container form input {
+    padding: 7px 12px;
+    margin-bottom: 25px;
+  }
+  .login_container form button img {
+    width: 55px;
+  }
+  .login_container form p {
+    font-size: 1.7em;
+  }
+  .login_container a {
+    font-size: 1.7em;
+  }
+}
+
+/*# sourceMappingURL=Login.css.map */

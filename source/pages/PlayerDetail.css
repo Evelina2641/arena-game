@@ -1,0 +1,70 @@
+.userDetail_container {
+  text-align: center;
+}
+.userDetail_container .wrapper h3 {
+  color: var(--text-color);
+  font-size: 2.5em;
+}
+.userDetail_container .wrapper img {
+  width: 200px;
+}
+.userDetail_container .wrapper .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.userDetail_container .wrapper .container p img {
+  width: 50px;
+}
+.userDetail_container .wrapper .container p span {
+  color: var(--accent-color);
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.userDetail_container .wrapper .inventory_container {
+  margin-top: 30px;
+}
+.userDetail_container .wrapper .inventory_container h3 {
+  font-size: 1.8em;
+  color: var(--accent-color);
+}
+.userDetail_container .wrapper .inventory_container .inventory_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.userDetail_container .wrapper .inventory_container .inventory_wrapper div {
+  width: 31%;
+  margin: 7px;
+}
+.userDetail_container .wrapper .inventory_container .inventory_wrapper div img {
+  width: 80%;
+}
+.userDetail_container .wrapper .inventory_container .inventory_wrapper div h2 {
+  color: var(--text-color);
+}
+
+@media screen and (min-width: 1280px) {
+  .userDetail_container .header_wrapper {
+    margin-bottom: 0;
+  }
+  .userDetail_container .wrapper h3 {
+    font-size: 2.8em;
+  }
+  .userDetail_container .wrapper .container p img {
+    width: 60px;
+  }
+  .userDetail_container .wrapper .container p span {
+    font-size: 1.3em;
+  }
+  .userDetail_container .wrapper .inventory_container h3 {
+    font-size: 2em;
+  }
+  .userDetail_container .wrapper .inventory_container .inventory_wrapper div {
+    width: 18%;
+  }
+}
+
+/*# sourceMappingURL=PlayerDetail.css.map */

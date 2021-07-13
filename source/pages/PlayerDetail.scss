@@ -1,0 +1,84 @@
+.userDetail_container {
+    text-align: center;
+    .wrapper {
+        h3 {
+            color: var(--text-color);
+            font-size: 2.5em;
+        }
+        img {
+            width: 200px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p {
+                img {
+                    width: 50px;
+                }
+                span {
+                    color: var(--accent-color);
+                    font-size: 1.2em;
+                    font-weight: 600;
+                }
+            }
+        }
+        .inventory_container {
+            margin-top: 30px;
+            h3 {
+                font-size: 1.8em;
+                color: var(--accent-color);
+            }
+            .inventory_wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                margin-top: 20px;
+                div {
+                    width: 31%;
+                    margin: 7px;
+                    img{
+                        width: 80%;
+                    }
+                    h2 {
+                        color: var(--text-color);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .userDetail_container {
+        .header_wrapper {
+            margin-bottom: 0;
+        }
+        .wrapper {
+            h3 {
+                font-size: 2.8em;
+            }
+            .container {
+                p {
+                    img {
+                        width: 60px;
+                    }
+                    span {
+                        font-size: 1.3em;
+                    }
+                }
+            }
+            .inventory_container {
+                h3 {
+                    font-size: 2em;
+                }
+                .inventory_wrapper {
+                    div {
+                        width: 18%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,80 @@
+.inventoryItem_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.inventoryItem_container h3 {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0px 40px;
+    
+}
+.inventoryItem_container h3 a {
+    color: var(--primary-color);
+    /* text-decoration: none; */
+}
+.inventoryItem_container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+.inventoryItem_container div p {
+    font-size: 1.2em;
+}
+.inventoryItem_container div img {
+    width: 120px;
+    margin: 7px 0;
+}
+.inventoryItem_container div button {
+    padding: 5px 15px;
+    border: 2px solid var(--primary-color);
+    color: var(--text-color);
+    font-weight: 600;
+    margin-top: 5px;
+
+}
+.errorMessage {
+    font-size: 1.2em;
+    color: var(--text-color);
+    margin: 15px 20px;
+    animation: shake 0.5s infinite;
+    text-align: center;
+}
+
+@media screen and (min-width: 1280px) {
+    .inventoryItem_container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .inventoryItem_container div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+    }
+    .inventoryItem_container div p {
+        font-size: 1.2em;
+    }
+    .inventoryItem_container div img {
+        width: 120px;
+        margin: 7px 0;
+    }
+    .inventoryItem_container div button {
+        padding: 5px 15px;
+        border: 2px solid var(--primary-color);
+        color: var(--text-color);
+        font-weight: 600;
+        margin-top: 5px;
+    
+    }
+    .errorMessage {
+        font-size: 1.6em;
+        color: var(--text-color);
+        margin: 15px 20px;
+        animation: shake 0.5s infinite;
+        text-align: center;
+    }
+}

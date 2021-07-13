@@ -1,0 +1,122 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  img {
+    width: 100px;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h3 {
+      display: flex;
+      margin-top: -10px;
+      img {
+        width: 50px;
+      }
+      span {
+        color: var(--accent-color);
+      }
+    }
+    h2 {
+      color: var(--text-color);
+    }
+    button {
+      img {
+        width: 70px;
+        margin-top: -7px;
+        cursor: pointer;
+      }
+      border: none;
+      outline: none;
+      a {
+        img {
+          width: 50px;
+        }
+      }
+    }
+  }
+}
+main {
+    nav {
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin: 100px 30px 0 30px;
+            div {
+                width: 45%;
+                margin-bottom: 30px;
+                a {
+                    img {
+                        width: 100%;
+                        cursor: pointer;
+                        padding: 7px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    header {
+        margin: 10px 40px;
+        img {
+          width: 120px;
+          padding-right: 7px;
+        }
+        .wrapper {
+          h3 {
+            img {
+              width: 65px;
+            }
+          }
+          button {
+            img {
+              width: 80px;
+            }
+            a {
+              img {
+                width: 60px;
+              }
+            }
+          }
+        }
+      }
+      main {
+        max-width: 1280px;
+        margin: 0 auto;
+          nav {
+              ul{
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: space-around;
+                  align-items: center;
+                  margin: 0px 150px 0 150px;
+                  div {
+                      width: 40%;
+                      margin-bottom: 30px;
+
+                      a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                          img {
+                              width: 60%;
+                              height: 200px;
+                              cursor: pointer;
+                              padding: 15px;
+                              
+                          }
+                          .leader_picture {
+                            width: 50%
+                          }
+                      }
+                  }
+              }
+          }
+      }
+}
